@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 4.8rem;
+  color: #E1E1E6;
+  line-height: 125%;
+  margin-bottom: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2.2rem;
+  color: #C4C4CC;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: #E1E1E6;
+}
+
+#universe section,
+#exploration section,
+#error section {
+  margin-top: 6.3rem;
+  margin-left: 10.2rem;
+  max-width: 64.8rem;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background: url(assets/bg-home.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 4rem 7.2rem;
+  gap: 4.2rem;
+}
+
+nav {
+  display: flex;
+  gap: 4.2rem;
+}
+
+#app {
+  flex: 1;
+}
+
+.active {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: white;
+}
+
+#home {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+#home a {
+  display: inline-block;
+  color: white;
+  border: 2px solid white;
+  border-radius: .5rem;
+  padding: 1.2rem 3.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  transition: background .1s;
+  transition: transform .2s;
+}
+
+#home a:hover {
+  background-color: white;
+  color: #02799D;
+  transform: scale(1.05);
+}
+
+#home section {
+  margin-top: -13rem;
+}
+
+#home h1 {
+  margin-bottom: 2.4rem;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  #app {
+    padding-inline: 6.4rem;
+  }
+
+  #universe section,
+  #exploration section,
+  #error section {
+    margin: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  #app {
+    padding-inline: 2.4rem;
+  }
+
+  #universe section,
+  #exploration section {
+    margin: 0;
+    margin-bottom: 6.4rem;
+  }
+}
